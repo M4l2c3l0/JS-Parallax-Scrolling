@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  height: 710px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+div {
+  height: 800px;
+  width: 100%;
+  margin-top: -10px;
+  background-color: #ddd;
+  position: relative;
+  z-index: 1;
+}
