@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JS Parallax Scrolling</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        height: 710px;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+      }
+
+      div {
+        height: 800px;
+        width: 100%;
+        margin-top: -10px;
+        background-color: #ddd;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+    <script type="text/javascript">
+      var img, y;
+      function parallex() {
+        //find y position on page
+        y = window.pageYOffset;
+        img = document.getElementById('wall');
+        img.style.top = y * 0.4 + 'px';
+      }
+      window.addEventListener('scroll', parallex);
+    </script>
+  </head>
+  <body>
+    <img id="wall" src="wall-blur.png" alt="wall image">
+    <div></div>
+  </body>
+</html>
