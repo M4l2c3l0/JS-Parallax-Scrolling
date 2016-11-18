@@ -1,15 +1,56 @@
-body {
+* {
   margin: 0;
   padding: 0;
-}
-img {
-  height: 710px;
-  width: 100%;
-  position: relative;
-  z-index: -1;
+  font-family: Avenir, Avenir Next, Arial, sans-serif;
 }
 
-div {
+#firstPanel {
+  height: 810px;
+  width: 100%;
+  background: url('wall-blur.png') no-repeat center;
+  background-size: 101% 101%;
+  position: relative;
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 26px;
+  color: #666;
+  line-height: 100px;
+}
+
+li:hover {
+  background-color: rgba(255, 155, 155, 0.5);
+  color: #fff;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  top: 240px;
+}
+
+span {
+  margin-right: 5px;
+  padding: 0 5px 0 8px;
+  border: 10px solid rgba(255, 255, 255, 0.6);
+}
+
+#secondPanel {
   height: 800px;
   width: 100%;
   margin-top: -10px;
