@@ -13,22 +13,37 @@
   text-align: center;
 }
 
-header {
-  height: 100px;
+#top_nav {
+  height: 80px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
 ul {
   list-style: none;
+  font-size: 0;
+}
+
+li, a {
+  width: 200px;
+  font-size: 26px;
+  line-height: 80px;
 }
 
 li {
-  width: 200px;
   display: inline-block;
-  vertical-align: middle;
-  font-size: 26px;
+  vertical-align: top;
   color: #666;
-  line-height: 100px;
+}
+
+.dropdown {
+  display: none;
+  background-color: rgba(255, 155, 155, 0.3);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
 }
 
 li:hover {
@@ -36,15 +51,23 @@ li:hover {
   color: #fff;
 }
 
+li:hover .dropdown {
+  display: block;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 h1 {
   font-size: 100px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
-  top: 240px;
+  top: 260px;
 }
 
-span {
+h1 span {
   margin-right: 5px;
   padding: 0 5px 0 8px;
   border: 10px solid rgba(255, 255, 255, 0.6);
