@@ -1,1 +1,1 @@
-# JS-Parallax-Scrolling
+# Parallex-effect
